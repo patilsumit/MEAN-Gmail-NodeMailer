@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-6 mt-5 mx-auto">
+        <form >
+          <h1 class="h3 mb-3 font-weight-normal">Please Compose Your Email</h1>
+          <div class="form-group">
+            <label for="email">Sender</label>
+            <input type="email" class="form-control" name="email" placeholder="Enter email" [(ngModel)]="compose.sender" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" class="form-control" name="subject" placeholder="Subject" [(ngModel)]="compose.subject" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Description</label>
+            <input type="text" class="form-control" name="description" placeholder="description" [(ngModel)]="compose.description" required>
+          </div>
+          <button type="submit" class="btn btn-lg btn-primary btn-block" (click)="sendEmail()">Send Email</button>
+        </form>
+      </div>
+    </div>
+  </div>
